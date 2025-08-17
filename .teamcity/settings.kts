@@ -64,7 +64,6 @@ object Build : BuildType({
         vcs {
         }
         schedule {
-            enabled = false
             triggerBuild = always()
         }
     }
