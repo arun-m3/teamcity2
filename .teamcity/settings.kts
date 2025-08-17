@@ -86,6 +86,13 @@ object Build : BuildType({
         }
     }
 
+    dependencies {
+        artifacts(RelativeId("Build")) {
+            buildRule = lastSuccessful()
+            artifactRules = "*"
+        }
+    }
+
     requirements {
         exists("new")
     }
