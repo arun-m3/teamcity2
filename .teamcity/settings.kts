@@ -41,9 +41,14 @@ object Build : BuildType({
 
     steps {
         script {
-            name = "Install requirements"
+            name = "Installation"
             id = "Install_requirements"
-            scriptContent = "pwd"
+            scriptContent = "ls"
+        }
+        script {
+            name = "Progress"
+            id = "Progressing"
+            scriptContent = "whoami"
         }
     }
 
