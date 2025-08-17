@@ -37,7 +37,8 @@ project {
 }
 
 object Build : BuildType({
-    name = "Build"
+    name = "Build_1"
+    description = "build description"
 
     params {
         param("test_parameter", "")
