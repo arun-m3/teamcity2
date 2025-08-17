@@ -54,7 +54,7 @@ object Build : BuildType({
             scriptContent = "ls"
         }
         script {
-            name = "Progress"
+            name = "Progressing"
             id = "Progressing"
             scriptContent = "whoami"
         }
