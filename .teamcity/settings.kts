@@ -85,4 +85,8 @@ object Build : BuildType({
             infoFormat = "%build.number%"
         }
     }
+
+    requirements {
+        exists("new")
+    }
 })
