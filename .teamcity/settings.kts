@@ -37,7 +37,8 @@ project {
 }
 
 object Build : BuildType({
-    name = "Build"
+    val build_name = "Build"
+    name = build_name
     description = "build descriptions"
 
     params {
@@ -69,7 +70,6 @@ object Build : BuildType({
             triggerBuild = always()
         }
     }
-
     failureConditions {
         failOnText {
             conditionType = BuildFailureOnText.ConditionType.CONTAINS
