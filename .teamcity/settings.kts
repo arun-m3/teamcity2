@@ -40,7 +40,9 @@ object Build : BuildType({
 
     steps{
         script {
-
+            name = "test"
+            id = "test"
+            scriptContent = "whoami"
         }
     }
 
