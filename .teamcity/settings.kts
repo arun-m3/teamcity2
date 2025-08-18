@@ -55,8 +55,8 @@ object Build : BuildType({
             scriptContent = "whoami"
         }
         script {
-            name = "Installation_1"
-            id = "Install_requirements_1"
+            name = "Installation"
+            id = "Install_requirements"
             scriptContent = "ls"
         }
         script {
