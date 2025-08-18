@@ -38,6 +38,14 @@ object Build : BuildType({
         root(DslContext.settingsRoot)
     }
 
+    steps{
+        script {
+            name = "test"
+            id = "test"
+            scriptContent = "whoami"
+        }
+    }
+
     triggers {
         vcs {
         }
